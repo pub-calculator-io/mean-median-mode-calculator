@@ -10,6 +10,8 @@ License: GPLv2 or later
 Text Domain: ci_mean_median_mode_calculator
 */
 
+if (!defined('ABSPATH')) exit;
+
 if (!function_exists('add_shortcode')) return "No direct call for Mean, Median, Mode Calculator by Calculator.iO";
 
 function display_ci_mean_median_mode_calculator(){
