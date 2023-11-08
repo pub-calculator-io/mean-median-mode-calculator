@@ -13,7 +13,7 @@ Calculator for mean, median, and mode in statistics. Use this calculator to get 
 
 ## Usage
 * Add the shortcode `[ci_mean_median_mode_calculator]` to your page, post or sidebar.
-* Add the following code: `<?php display_ci_mean_median_mode_calculator(); ?>` to your template where you would like the Mean, Median, Mode Calculator to appear.
+* Or add the following code: `<?php display_ci_mean_median_mode_calculator(); ?>` to your template where you would like the Mean, Median, Mode Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
