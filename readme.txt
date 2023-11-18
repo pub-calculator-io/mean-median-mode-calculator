@@ -1,4 +1,4 @@
-=== Mean, Median, Mode Calculator by Calculator.iO ===
+=== Mean, Median, Mode Calculator ===
 Contributors: calculatorio
 Tags: mean median mode calculator, calculate mean median mode, central tendency calculator, find mean median mode, statistical calculator, arithmetic mean, median calculation, mode of data, mean median mode formula, calculate central tendency
 Requires at least: 5.0
