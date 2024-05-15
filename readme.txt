@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Mean, Median, M
 == Screenshots ==
 
 1. The Mean, Median, Mode Calculator Input Form.
-2. The Mean, Median, Mode Calculator Calculation Results.
 
 == Installation ==
 

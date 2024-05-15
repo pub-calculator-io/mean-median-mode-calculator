@@ -3,7 +3,6 @@
 Calculator for mean, median, and mode in statistics. Use this calculator to get the mean, median, mode, range, and the average for any data set.
 
 ![Mean, Median, Mode Calculator Input Form](/assets/images/screenshot-1.png "Mean, Median, Mode Calculator Input Form")
-![Mean, Median, Mode Calculator Calculation Results](/assets/images/screenshot-2.png "Mean, Median, Mode Calculator Calculation Results")
 
 ## Installation
 

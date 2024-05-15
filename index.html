@@ -28,17 +28,27 @@
             <div class="calculator-setting" id="calculator_form">
                 <div class="calculator-content col">
                 	<div class="input-wrapper row">
-                		<label class="input col  ">
+                		<label class="input col ">
                 			<p class="input__title">Data Set</p>
                 			<div class="input-field row">
                 				
-                				<input type="text" class="input-field__input" placeholder="" id="data_set" value="6, 11, 11, 14, 14, 15, 15, 15, 16, 16, 33, 35" />
+                				<textarea name="data_set" id="data_set"" class="input-field__input input-field__input--textarea" placeholder="" ">6, 11, 11, 14, 14, 15, 15, 15, 16, 16, 33, 35</textarea>
                 				
                 			</div>
                 			<div class="input-hints row">
                 				<span class="input-hints__hint input-hints__hint--comma">Comma or space-separated numbers</span>
                 			</div>
-                		</label>	</div>
+                			<script>
+                				document.querySelectorAll('.input-field__input--textarea').forEach((input) => {
+                					input.addEventListener('input', (e) => {
+                						input.style.height = "40px"
+                						let scrollHeight = e.target.scrollHeight
+                						input.style.height = scrollHeight + "px"
+                					})
+                				})
+                			</script>
+                		</label>
+                	</div>
                 </div>
                 
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  " >
@@ -46,13 +56,15 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -67,8 +79,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<div class="result-table__wrapper">
 		<table class="result-table">
@@ -80,49 +91,49 @@
 			<tbody>
 				<tr>
 					<th>Mean x̄</th>
-					<td id="mean-x">16.75</td>
+					<td id="mean-x" class="animate">16.75</td>
 					<th>Outliers</th>
-					<td id="outliers">6, 33, 35</td>
+					<td id="outliers" class="animate">6, 33, 35</td>
 				</tr>
 				<tr>
 					<th>Median x̃</th>
-					<td id="median-x">15</td>
+					<td id="median-x" class="animate">15</td>
 					<th>Quartile Q1</th>
-					<td id="q-1">12.5</td>
+					<td id="q-1" class="animate">12.5</td>
 				</tr>
 				<tr>
 					<th>Mode</th>
-					<td id="mode">15 appeared 3 times</td>
+					<td id="mode" class="animate">15 appeared 3 times</td>
 					<th>Quartile Q2</th>
-					<td id="q-2">15</td>
+					<td id="q-2" class="animate">15</td>
 				</tr>
 				<tr>
 					<th>Range</th>
-					<td id="range">29</td>
+					<td id="range" class="animate">29</td>
 					<th>Quartile Q3</th>
-					<td id="q-3">16</td>
+					<td id="q-3" class="animate">16</td>
 				</tr>
 				<tr>
 					<th>Minimum</th>
-					<td id="min">6</td>
+					<td id="min" class="animate">6</td>
 					<th>Interquartile Range IQR</th>
-					<td id="iqr">3.5</td>
+					<td id="iqr" class="animate">3.5</td>
 				</tr>
 				<tr>
 					<th>Maximum</th>
-					<td id="max">35</td>
+					<td id="max" class="animate">35</td>
 					<th></th>
 					<td></td>
 				</tr>
 				<tr>
 					<th>Sum</th>
-					<td id="sum">201</td>
+					<td id="sum" class="animate">201</td>
 					<th></th>
 					<td></td>
 				</tr>
 				<tr>
 					<th>Count n</th>
-					<td id="count">12</td>
+					<td id="count" class="animate">12</td>
 					<th></th>
 					<td></td>
 				</tr>
